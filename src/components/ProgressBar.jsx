@@ -1,16 +1,21 @@
 import React from "react";
 
-function ProgressBar({max,value}) {
+function ProgressBar({questionNumber}) {
+    
+    const max = 5;
+
+    let answersLength = questionNumber +1;
     
 
+   
 
-
+   
 
     return (
         <>
 
-            <progress value={value} max={max}></progress>
-            <span>{` ${value} out of ${max} questions`}</span>
+            <progress value={answersLength} max={max}></progress>
+            <span>{` ${answersLength} out of ${max} questions`}</span>
         </>
     )
 

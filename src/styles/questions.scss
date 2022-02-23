@@ -1,0 +1,22 @@
+.option{
+    padding: 0.5rem;
+    border: 1px solid brown;
+    background-color: pink;
+    width: fit-content;
+    height: fit-content;
+    margin: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+
+}
+
+.selected{
+    background-color: yellowgreen;
+    padding: 0.5rem;
+    border: 1px solid brown;
+    width: fit-content;
+    height: fit-content;
+    margin: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
