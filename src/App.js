@@ -21,7 +21,7 @@ function App() {
   //I use this function to change the state of the questions and answers and then will pass it to the questions component
 
   //this will be the function I'll use on the question components to altering the state and fetching the data
-  function QuestionsWithAnswers(dataResults) {
+  function stateQuestions(dataResults) {
 
     setQuestionsAndAnswers(dataResults)
 
@@ -29,7 +29,7 @@ function App() {
 
   //this function will be use to get the next question number or start again if the user pushes the buttom after the last question.
 
-  function QuestionNumber(current) {
+  function questionNumber() {
     setCurrentQuestion(previous => {
       let question = previous + 1;
       if (question > 5) {
@@ -61,7 +61,7 @@ function App() {
 
   }, []);
 
-  //call questions when user hits next button
+  //call questions when user wants to do test
   function callQuestionComponent(e) {
     e.preventDefault();
     setCallQuestion(!callQuestion)
@@ -77,7 +77,11 @@ function App() {
         
       <button onClick={callQuestionComponent}>Push me to find out!</button>
       {
-        callQuestion && <Questions/>
+        callQuestion && <Questions
+          questionNumber={questionNumber}
+          currentQuestion={currentQuestion}
+          questionsAndAnswers={questionsAndAnswers}
+          setQuestionsAndAnswers={stateQuestions}/>
         // <ProgressBar value={value} max={5} />
       }
      
