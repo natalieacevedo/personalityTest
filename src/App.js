@@ -52,7 +52,7 @@ function App() {
   } else {
     if (finish) {
       return (
-        <Results/>
+        <Results results={results}/>
       )
     } else {
       return (

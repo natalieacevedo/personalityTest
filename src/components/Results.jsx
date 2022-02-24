@@ -1,8 +1,8 @@
 
 
-function Results() {
+function Results({results}) {
     
-
+    console.log(results);
 
 
 
