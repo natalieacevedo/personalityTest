@@ -1,23 +1,19 @@
 import { useState, useEffect } from "react";
-import Results from "./Results";
 import ProgressBar from "./ProgressBar";
 
 
 
 
 
-function Questions({questions,results,keepResults}) {
+function Questions({questions,results,keepResults,isFinished}) {
             
    //state for current question
   const [currentQuestion, setCurrentQuestion] = useState(0);
  
   
-
-
-
   let answers = questions[currentQuestion].answers;
   
-  const lastQuestion = currentQuestion === 4 ? "find out results" : "Next Question";
+  const lastQuestion = currentQuestion === questions.length- 1 ? "find out results" : "Next Question";
 
   
 
@@ -26,7 +22,8 @@ function Questions({questions,results,keepResults}) {
     
     setCurrentQuestion(previous => {
       let questionNumber = previous + 1;
-      if (questionNumber >= 5) {
+      if (questionNumber >= questions.length) {
+        isFinished();
         questionNumber = 0;
        
       } 
@@ -34,11 +31,6 @@ function Questions({questions,results,keepResults}) {
       
     })
   };
-
-
- 
-
-  console.log(results[currentQuestion]);
 
     return (
         <>
@@ -50,6 +42,7 @@ function Questions({questions,results,keepResults}) {
         </ol>
         <ProgressBar questionNumber={currentQuestion}/>
         <button onClick={questionNumber}>{lastQuestion}</button>
+        
        
   
         </>

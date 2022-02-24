@@ -3,26 +3,20 @@ import "./styles/main.scss";
 import Home from "./components/Home";
 import Questions from "./components/Questions";
 import mockQuestions from "./mockData";
+import Results from "./components/Results";
 const { useState, useEffect } = React;
 
 
 function App() {
 
- 
-
-  
   //state to keep questions and answers got from 'backend'
   const [questions, setQuestions] = useState([]);
   const [results, setResults] = useState([]);
+  const [finish, setFinish] = useState(false);
 
 
-
-
-  
 
   function keepResults(ind, questionNumber) {
-    
-    
     setResults(previous => {
       
       if (previous.length >= questionNumber) {
@@ -32,7 +26,6 @@ function App() {
         console.log(newArr);
         return newArr;
       }
-      
       return previous.concat([ind]);
     
     })
@@ -40,8 +33,6 @@ function App() {
   
   }
  
-
-
   function populateQuestions() {
 
     //here we will make a 'GET API request'.
@@ -49,18 +40,30 @@ function App() {
 
   };
 
+  function isFinished() {
+    setFinish(!finish);
+  }
+
   
   if (questions.length === 0) {
     return (
       <Home populateQuestions= {populateQuestions}/>
     )
   } else {
-    return (
-      <Questions questions={questions} keepResults={keepResults} results={results}/>
-    )
+    if (finish) {
+      return (
+        <Results/>
+      )
+    } else {
+      return (
+        <Questions questions={questions} keepResults={keepResults} results={results} isFinished={isFinished}/>
+      )
+    }
+
+   
   }
 
-}
+};
 
 
 
