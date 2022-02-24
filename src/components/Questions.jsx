@@ -39,7 +39,7 @@ function Questions({questions,results,keepResults,isFinished}) {
       let questionNumber = previous + 1;
       if (questionNumber >= questions.length) {
         isFinished();
-        questionNumber = 0;
+        //questionNumber = 0;
        
       } 
         return questionNumber;
