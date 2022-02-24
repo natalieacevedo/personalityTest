@@ -10,6 +10,7 @@ function Questions({questions,results,keepResults}) {
             
    //state for current question
   const [currentQuestion, setCurrentQuestion] = useState(0);
+ 
   
 
 
@@ -22,6 +23,7 @@ function Questions({questions,results,keepResults}) {
 
   //changes number of question
   function questionNumber() {
+    
     setCurrentQuestion(previous => {
       let questionNumber = previous + 1;
       if (questionNumber >= 5) {
@@ -36,7 +38,7 @@ function Questions({questions,results,keepResults}) {
 
  
 
-  
+  console.log(results[currentQuestion]);
 
     return (
         <>

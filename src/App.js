@@ -26,8 +26,8 @@ function App() {
     setResults(previous => {
       
       if (previous.length >= questionNumber) {
-        
-        let newArr = previous;
+
+        let newArr = [...previous];
         newArr[questionNumber] = ind;
         console.log(newArr);
         return newArr;
