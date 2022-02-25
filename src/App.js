@@ -33,11 +33,18 @@ function App() {
     setFinish(!finish);
   }
 
+  function goBackHome(e) {
+    e.preventDefault();
+    setQuestions([]);
+    setResults([]);
+    isFinished();
+  }
+
   if (questions.length === 0) {
     return <Home populateQuestions={populateQuestions} />;
   } else {
     if (finish) {
-      return <Results results={results} />;
+      return <Results results={results} goBackHome={goBackHome} />;
     } else {
       return (
         <Questions
