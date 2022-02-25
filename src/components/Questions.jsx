@@ -6,6 +6,9 @@ function Questions({ questions, results, keepResults, isFinished }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [hideButton, setHideButton] = useState(false);
 
+  console.log(results);
+  console.log(currentQuestion);
+
   let answers = questions[currentQuestion].answers;
 
   const lastQuestion =
@@ -60,7 +63,12 @@ function Questions({ questions, results, keepResults, isFinished }) {
         Previous question
       </button>
 
-      <button onClick={questionNumber}>{lastQuestion}</button>
+      <button
+        disabled={results.length === currentQuestion}
+        onClick={questionNumber}
+      >
+        {lastQuestion}
+      </button>
     </>
   );
 }
