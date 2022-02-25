@@ -1,10 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import ProgressBar from "./ProgressBar";
 
 function Questions({ questions, results, keepResults, isFinished }) {
   //state for current question
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [hideButton, setHideButton] = useState(false);
 
   console.log(results);
   console.log(currentQuestion);
@@ -19,21 +18,18 @@ function Questions({ questions, results, keepResults, isFinished }) {
   function previousQuestion() {
     setCurrentQuestion((previous) => {
       let questionNumber = previous - 1;
-      if (questionNumber === 0) {
-        setHideButton(true);
-      }
-
       return questionNumber;
     });
   }
 
   //changes number of question to move forward
   function questionNumber() {
-    setHideButton(false);
     setCurrentQuestion((previous) => {
       let questionNumber = previous + 1;
       if (questionNumber >= questions.length) {
         isFinished();
+      } else if (questionNumber === 0) {
+        //setHideButton(true);
       }
       return questionNumber;
     });
@@ -57,7 +53,7 @@ function Questions({ questions, results, keepResults, isFinished }) {
       <ProgressBar questionNumber={currentQuestion} />
 
       <button
-        className={hideButton ? "hideMe" : "buttonsStyle"}
+        className={currentQuestion === 0 ? "hideMe" : "buttonsStyle"}
         onClick={previousQuestion}
       >
         Previous question
