@@ -18,7 +18,7 @@ For each of the features of the app, I created a branch locally that was later m
 
 ---
 ## If I had more time I would to change ...
-Definitely  the styling and perhaps the logic on the results component. Adittionaly, althought the application is responsive, it resposiveness could definetely be improved.
+Definetely  the styling and perhaps the logic on the results component. Adittionaly, althought the application is responsive, it resposiveness could definetely be improved.
 
 ---
 
