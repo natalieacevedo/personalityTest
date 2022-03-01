@@ -37,6 +37,7 @@ function App() {
     e.preventDefault();
     setQuestions([]);
     setResults([]);
+
     isFinished();
   }
 
