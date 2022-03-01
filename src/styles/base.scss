@@ -16,3 +16,78 @@
 body {
     background-color: #EAFCDA;
 }
+
+@media screen and (max-width: 420px){
+ .main-img{
+     width: 100% !important;
+     height: auto !important;
+    }
+    .mainButton{
+        width: 60vw !important;
+        font-size: 1rem !important;
+        
+       
+    }
+
+    .main-title{
+        font-size: 1.5rem !important;
+        margin-top: -20vh !important;
+        padding: 1vw !important;
+    }
+    .mainPage{
+        p{
+            font-size: 1rem !important;
+            padding: 1vw !important;
+        }
+    }
+
+    .resultContainer{
+        width: 80%;
+        box-shadow: none !important;
+    }
+
+    .progress-wrapper{
+        progress{
+            margin-top: 15vh !important;
+        }
+    }
+
+
+
+}
+@media screen and (max-width: 750px) {
+    .progress-wrapper{
+        progress{
+            margin-top: 15vh !important;
+        }
+    }
+    .main-img{
+       
+        width: 100% !important;
+        height: auto !important;
+       }
+
+       .questions-wrapper{
+        h2{
+            
+                font-size: 1.3rem;
+                text-align: center;
+                padding: 1rem;
+                margin-bottom: 20% !important;
+        
+       }
+       ol{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: -10rem !important;
+       }
+
+       .questions-buttons{
+           width: 100% !important;
+           margin-top:1.3rem !important;
+           .questinBt{
+               width: 50%;
+           }
+       }
+}
+}
