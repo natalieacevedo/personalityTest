@@ -29,14 +29,13 @@ function Questions({ questions, results, keepResults, isFinished }) {
       if (questionNumber >= questions.length) {
         isFinished();
       } else if (questionNumber === 0) {
-        //setHideButton(true);
       }
       return questionNumber;
     });
   }
 
   return (
-    <>
+    <div className="questions-wrapper">
       <h2>{questions[currentQuestion].question}</h2>
       <ol>
         {answers.map((answer, i) => (
@@ -51,21 +50,25 @@ function Questions({ questions, results, keepResults, isFinished }) {
       </ol>
 
       <ProgressBar questionNumber={currentQuestion} />
+      <div className="questions-buttons">
+        <button
+          className={currentQuestion === 0 ? "hideMe" : "questionBt"}
+          onClick={previousQuestion}
+        >
+          Previous
+        </button>
 
-      <button
-        className={currentQuestion === 0 ? "hideMe" : "buttonsStyle"}
-        onClick={previousQuestion}
-      >
-        Previous question
-      </button>
-
-      <button
-        disabled={results.length === currentQuestion}
-        onClick={questionNumber}
-      >
-        {lastQuestion}
-      </button>
-    </>
+        <button
+          className={
+            results.length === currentQuestion ? "disable" : "questionBt"
+          }
+          disabled={results.length === currentQuestion}
+          onClick={questionNumber}
+        >
+          {lastQuestion}
+        </button>
+      </div>
+    </div>
   );
 }
 

@@ -1,34 +1,85 @@
-.option{
-    padding: 0.5rem;
-    border: 1px solid brown;
-    background-color: pink;
-    width: fit-content;
-    height: fit-content;
-    margin: 1rem;
-    border-radius: 1rem;
-    text-align: center;
 
-}
+.questions-wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family:'ABeeZee', sans-serif;
+    margin-top: -8vh;
+    background-color:#EAFCDA;
+ 
+    h2 {
+        color: #942911;
+    }
 
-.selected{
-    background-color: yellowgreen;
-    padding: 0.5rem;
-    border: 1px solid brown;
-    width: fit-content;
-    height: fit-content;
-    margin: 1rem;
-    border-radius: 1rem;
-    text-align: center;
-}
+    ol{
+        margin-top: -8vh;
+        box-shadow: 0px 2px 15px 2px #465362;
+        border-radius: 1rem;
+        object-fit: cover;
+        height: 30vh;
+        background-color: #f1ffe7;
 
-.hideMe{
-    visibility: hidden;
-}
-
-// .buttonsStyle{
+        li{
+        cursor: pointer;
+        background-color: #f7dad9;
+        padding: 0.5rem;
+        border: 1px solid brown;
+        width: fit-content;
+        height: fit-content;
+        margin: 1rem;
+        border-radius: 1rem;
+        text-align: center;
+        }
+    }
     
-// }
+    .selected{
+        background-color: yellowgreen;
+        padding: 0.5rem;
+        border: 1px solid brown;
+        width: fit-content;
+        height: fit-content;
+        margin: 1rem;
+        border-radius: 1rem;
+        text-align: center;
+    }
+    
+    .hideMe{
+        visibility: hidden;
+    }
+    
+     .disable{
+        opacity: 0.6;
+        cursor: not-allowed;
+        background-color: #CD5334;
+        border: 1px solid #2E282A;
+        text-align: center;
+        font-size: 1rem;
+        border-radius: 2rem;
+        padding: 0.4rem;
+        color: #EDB88B;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        width: 10rem;
+        margin: 0 auto;
 
-li{
-    cursor: pointer;
+    }
+    .questions-buttons{
+        display: flex;
+        justify-content: space-around;
+        width: 20vw;
+        margin: 0 auto;
+        margin-top: -9rem;
+    }
+    
+   
+    
+    .questionBt{
+        margin: 0 auto;
+        @include all-Buttons(10rem,1rem);
+    }
+
+    
+    
 }

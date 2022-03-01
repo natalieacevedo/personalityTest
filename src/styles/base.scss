@@ -1,0 +1,14 @@
+//mixins for all components:
+
+@mixin all-Buttons($width,$fontSize) {
+    width: $width;
+    background-color: #B13D22;
+    border: 1px solid #2E282A;
+    text-align: center;
+    font-size: $fontSize;
+    border-radius: 2rem;
+    padding: 0.4rem;
+    color: #EDB88B;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+};

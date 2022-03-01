@@ -1,5 +1,5 @@
 function Results({ results, goBackHome }) {
-  console.log(results);
+  let result;
 
   function mostOcurrent(number) {
     let numberOcurrences = results.filter((el) => el === number);
@@ -17,98 +17,95 @@ function Results({ results, goBackHome }) {
 
   const maxNumber = Math.max(megaShy, littleShy, perfect, veryConfident);
 
-  console.log(maxNumber);
-
   if (maxNumber === megaShy) {
-    return (
-      <div>
-        <h1>Please stop being so shy!</h1>
+    result = (
+      <>
+        <h1>"Please stop being so shy!"</h1>
         <p>
-          Shyness holds you back, Shyness is nice and shyness can stop you from
+          {" "}
+          "Shyness holds you back, Shyness is nice and shyness can stop you from
           doing all the things in life you'd like to 3% of the population says
-          they are very shy, and you are one of them. Lorem ipsum dolor sit
-          amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          they are very shy, and you are one of them.Lorem ipsum dolor sitamet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
           labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
           exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum.
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+          nonproident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum.";
         </p>
-        <button onClick={goBackHome}>Take test again</button>
-      </div>
+      </>
     );
   } else if (maxNumber === littleShy) {
-    return (
-      <div>
-        <h1>You are not too bad</h1>
+    result = (
+      <>
+        <h1>"You are not too bad!"</h1>
         <p>
           {" "}
-          You need to let go a little more! Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum.
+          "You need to let go and believe in yourself a little bit more, Shyness
+          is nice and shyness can stop you from doing all the things in life
+          you'd like to 3% of the population says they are very shy, and you are
+          one of them.Lorem ipsum dolor sitamet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa
+          qui officia deserunt mollit anim id est laborum.";
         </p>
-        <button onClick={goBackHome}>Take test again</button>
-      </div>
+      </>
     );
   } else if (maxNumber === perfect) {
-    return (
-      <div>
-        <h1>I wish I was like you!</h1>
+    result = (
+      <>
+        <h1>"I wish to be as confident as you are!"</h1>
         <p>
           {" "}
-          You need to let go a little more! Lorem ipsum dolor sit amet,
+          "Excellent, you believe in yourself without being arrogant believe in
+          yourself a little bit more, Shyness is nice and shyness can stop you
+          doing all the things in life you'd like to 3% of the population says
+          they are very shy, and you are one of them.Lorem ipsum dolor sitamet,
           consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
           labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
           exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum.
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+          nonproident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum.";
         </p>
-        <button onClick={goBackHome}>Take test again</button>
-      </div>
+      </>
     );
   } else if (maxNumber === veryConfident) {
-    return (
-      <div>
-        <h1>Excellent level of confidence!</h1>
+    result = (
+      <>
+        <h1>"You are a little too confident!"</h1>
         <p>
           {" "}
-          People loves you and you love them Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum.
+          "you believe in yourself, excellent, but sometimes you are a little
+          arrogant withoutin yourself a little bit more, Shyness is nice and
+          shyness can stop you from doing all the things in life you'd like to
+          3% of the population says they are very shy, and you are one of
+          them.Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa
+          qui officia deserunt mollit anim id est laborum.";
         </p>
-        <button onClick={goBackHome}>Take test again</button>
-      </div>
-    );
-  } else {
-    return (
-      <div>
-        <h1>You are not either shy or outgoing</h1>
-        <p>
-          You are on the fence them Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-          sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <button onClick={(e) => goBackHome()}>Take test again</button>
-      </div>
+      </>
     );
   }
+
+  return (
+    <div className="resultContainer">
+      {result}
+
+      <button className="lastButton" onClick={goBackHome}>
+        Take test again
+      </button>
+    </div>
+  );
 }
 
 export default Results;
