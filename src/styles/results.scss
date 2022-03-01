@@ -1,3 +1,25 @@
 .lastButton{
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+
     @include all-Buttons(10rem,1rem);
+}
+
+.resultContainer{
+
+width: 50vw;
+margin: 15vh auto;
+text-align: center;
+font-family: 'ABeeZee', sans-serif;
+line-height: 1.5;
+border-radius: 6px;
+box-shadow: 0px 2px 15px 2px #465362;
+object-fit: cover;
+background-color:#f1ffe7;
+
+h1{
+    color: #942911;
+    font-size: 2rem;
+}
+
 }
