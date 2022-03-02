@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/personalityTest/static/css/main.e5532a34.css",
+    "main.js": "/personalityTest/static/js/main.21352631.js",
+    "static/js/787.a86f3764.chunk.js": "/personalityTest/static/js/787.a86f3764.chunk.js",
+    "static/media/puzzle-head.png": "/personalityTest/static/media/puzzle-head.9db98e8887b74a01cae5.png",
+    "index.html": "/personalityTest/index.html",
+    "main.e5532a34.css.map": "/personalityTest/static/css/main.e5532a34.css.map",
+    "main.21352631.js.map": "/personalityTest/static/js/main.21352631.js.map",
+    "787.a86f3764.chunk.js.map": "/personalityTest/static/js/787.a86f3764.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5532a34.css",
+    "static/js/main.21352631.js"
+  ]
+}
