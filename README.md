@@ -2,7 +2,7 @@
 
 ## The reason behind this project
 
-This project was developed as part of the hiring process of Teamway. 
+This project was developed as part of the hiring process of a company. 
 
 ---
 ## Description
