@@ -1,4 +1,5 @@
 function Results({ results, goBackHome }) {
+  console.log(results);
   let result;
 
   function mostOcurrent(number) {

@@ -14,13 +14,10 @@ function App() {
 
   function keepResults(ind, questionNumber) {
     setResults((previous) => {
-      if (previous.length >= questionNumber) {
-        let newArr = [...previous];
-        newArr[questionNumber] = ind;
-        console.log(newArr);
-        return newArr;
-      }
-      return previous.concat([ind]);
+      let newArr = [...previous];
+      newArr[questionNumber] = ind;
+      console.log(newArr);
+      return newArr;
     });
   }
 
