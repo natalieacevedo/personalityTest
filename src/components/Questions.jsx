@@ -33,6 +33,18 @@ function Questions({ questions, results, keepResults, isFinished }) {
     });
   }
 
+  function nextButtonClassName() {
+    if (results.length === currentQuestion && results.length !== 0) {
+      return "disable";
+    } else if (currentQuestion === 0 && results.length === 0) {
+      return "onlyButtonDisable";
+    } else if (results.length === 1) {
+      return "onlyButton";
+    } else {
+      return "questionBt";
+    }
+  }
+  // results.length === currentQuestion ? "disable" : "questionBt"
   return (
     <div className="questions-wrapper">
       <h2>{questions[currentQuestion].question}</h2>
@@ -58,9 +70,7 @@ function Questions({ questions, results, keepResults, isFinished }) {
         </button>
 
         <button
-          className={
-            results.length === currentQuestion ? "disable" : "questionBt"
-          }
+          className={nextButtonClassName()}
           disabled={results.length === currentQuestion}
           onClick={questionNumber}
         >
