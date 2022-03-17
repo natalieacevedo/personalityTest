@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/personalityTest/static/css/main.d767d9dc.css",
-    "main.js": "/personalityTest/static/js/main.d537dbb0.js",
+    "main.css": "/personalityTest/static/css/main.3708b116.css",
+    "main.js": "/personalityTest/static/js/main.14f54afd.js",
     "static/js/787.a86f3764.chunk.js": "/personalityTest/static/js/787.a86f3764.chunk.js",
     "static/media/puzzle-head.png": "/personalityTest/static/media/puzzle-head.9db98e8887b74a01cae5.png",
     "index.html": "/personalityTest/index.html",
-    "main.d767d9dc.css.map": "/personalityTest/static/css/main.d767d9dc.css.map",
-    "main.d537dbb0.js.map": "/personalityTest/static/js/main.d537dbb0.js.map",
+    "main.3708b116.css.map": "/personalityTest/static/css/main.3708b116.css.map",
+    "main.14f54afd.js.map": "/personalityTest/static/js/main.14f54afd.js.map",
     "787.a86f3764.chunk.js.map": "/personalityTest/static/js/787.a86f3764.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d767d9dc.css",
-    "static/js/main.d537dbb0.js"
+    "static/css/main.3708b116.css",
+    "static/js/main.14f54afd.js"
   ]
 }
