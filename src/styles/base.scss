@@ -18,10 +18,7 @@ body {
 }
 
 @media screen and (max-width: 420px){
- .main-img{
-     width: 100% !important;
-     height: auto !important;
-    }
+
     .mainButton{
         width: 60vw !important;
         font-size: 1rem !important;
@@ -55,6 +52,7 @@ body {
 
 
 }
+
 @media screen and (max-width: 750px) {
     .progress-wrapper{
         progress{
@@ -62,9 +60,10 @@ body {
         }
     }
     .main-img{
-       
+        margin-left: 1.5rem !important;
         width: 100% !important;
         height: auto !important;
+        padding-left: 0px !important;
        }
 
        .questions-wrapper{

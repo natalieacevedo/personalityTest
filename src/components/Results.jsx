@@ -25,11 +25,13 @@ function Results({ results, goBackHome }) {
         <p>
           {" "}
           "Shyness holds you back, Shyness is nice and shyness can stop you from
-          doing all the things in life you'd like to 3% of the population says
+          doing all the things in life you'd like to 3% of the population says.
+          <br></br>
           they are very shy, and you are one of them.Lorem ipsum dolor sitamet,
           consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
           labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
           exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <br></br>
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
           dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
           nonproident, sunt in culpa qui officia deserunt mollit anim id est
@@ -46,12 +48,14 @@ function Results({ results, goBackHome }) {
           "You need to let go and believe in yourself a little bit more, Shyness
           is nice and shyness can stop you from doing all the things in life
           you'd like to 3% of the population says they are very shy, and you are
-          one of them.Lorem ipsum dolor sitamet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa
+          one of them.<br></br>Lorem ipsum dolor sitamet, consectetur adipiscing
+          elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+          dolor.<br></br>
+          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in
+          culpa.<br></br>
           qui officia deserunt mollit anim id est laborum.";
         </p>
       </>
@@ -65,11 +69,14 @@ function Results({ results, goBackHome }) {
           "Excellent, you believe in yourself without being arrogant believe in
           yourself a little bit more, Shyness is nice and shyness can stop you
           doing all the things in life you'd like to 3% of the population says
-          they are very shy, and you are one of them.Lorem ipsum dolor sitamet,
+          they are very shy, and you are one of them.Lorem ipsum dolor sitamet.
+          <br></br>
           consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
           labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
           exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          <br></br>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+          <br></br>
           dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
           nonproident, sunt in culpa qui officia deserunt mollit anim id est
           laborum.";
@@ -83,16 +90,18 @@ function Results({ results, goBackHome }) {
         <p>
           {" "}
           "you believe in yourself, excellent, but sometimes you are a little
-          arrogant withoutin yourself a little bit more, Shyness is nice and
-          shyness can stop you from doing all the things in life you'd like to
-          3% of the population says they are very shy, and you are one of
+          arrogant withoutin yourself a little bit more<br></br> Shyness is nice
+          and shyness can stop you from doing all the things in life you'd like
+          to 3% of the population says they are very shy, and you are one of
           them.Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad.<br></br>
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat. Duis aute irure dolor in
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa
-          qui officia deserunt mollit anim id est laborum. blalalalalalall";
+          pariatur.<br></br> Excepteur sint occaecat cupidatat nonproident, sunt
+          in culpa qui officia deserunt mollit anim id est laborum.
+          blalalalalalall";
         </p>
       </>
     );
